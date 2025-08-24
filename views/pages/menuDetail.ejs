@@ -1,0 +1,13 @@
+<%- include('../partials/header') %>
+<div class="detail-container">
+  <h2><%= item.name %></h2>
+  <p><%= item.description %></p>
+  <img src="<%= item.image %>" alt="<%= item.name %>" class="detail-img" />
+  <div class="container-box">
+    <p><b>ส่วนประกอบ: </b><%= item.ingredients %></p>
+    <p><b>ภาค: </b><%= item.region %></p>
+    <p><b>ราคา: </b><%= item.price %> บาท</p>
+  </div>
+  <a href="/menu" class="btn-back">← กลับไปที่เมนู</a>
+</div>
+<%- include('../partials/footer') %>

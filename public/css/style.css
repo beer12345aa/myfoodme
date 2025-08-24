@@ -1,0 +1,215 @@
+/* ---------------------------------------------------- */
+/* การตั้งค่าพื้นฐานสำหรับหน้าเว็บ */
+/* ---------------------------------------------------- */
+body {
+    font-family: 'Poppins', Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f5ff; /* ม่วงอ่อนมาก */
+    color: #000000; /* ตัวหนังสือสีดำ */
+}
+
+/* ---------------------------------------------------- */
+/* การออกแบบส่วนหัว (Header) */
+/* ---------------------------------------------------- */
+header {
+    background: linear-gradient(135deg, #6a1b9a, #8e24aa); /* ไล่สีม่วงเข้มไปสด */
+    color: #ffffff;
+    padding: 1.5rem 2rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* ---------------------------------------------------- */
+/* การออกแบบเมนูนำทาง (Navigation) */
+/* ---------------------------------------------------- */
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #e1bee7; /* ม่วงพาสเทลอ่อน */
+}
+
+/* ---------------------------------------------------- */
+/* การออกแบบส่วนเนื้อหาหลัก (Main Content) */
+/* ---------------------------------------------------- */
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+h2 {
+    text-align: center;
+    color: #6a1b9a;
+    margin-bottom: 30px;
+}
+.p1 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #8e24aa; /* ม่วงสด */
+    margin-bottom: 30px;
+}
+h1.page-title {
+    text-align: center;
+    color: #6a1b9a;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+h1.page-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: #ab47bc; /* ไฮไลท์ม่วงสด */
+}
+
+/* ---------------------------------------------------- */
+/* การออกแบบตารางรายการอาหาร (Menu Grid) */
+/* ---------------------------------------------------- */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.menu-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    color: #000000; /* ตัวหนังสือสีดำ */
+}
+
+.menu-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.menu-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.menu-card-body {
+    padding: 1.5rem;
+}
+
+.menu-card-body h3 {
+    margin-top: 0;
+    color: #6a1b9a;
+    font-size: 1.5rem;
+}
+
+.menu-card-body p {
+    color: #000000; /* ตัวหนังสือสีดำ */
+    font-size: 1rem;
+}
+
+/* ---------------------------------------------------- */
+/* หน้า detail */
+/* ---------------------------------------------------- */
+.detail-container {
+    max-width: 550px;
+    margin: 20px auto;
+    text-align: center;
+    padding: 10px;
+    background: #f3e5f5; /* ม่วงพาสเทลอ่อน */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    color: #000000; /* ตัวหนังสือสีดำ */
+}
+
+.detail-img {
+    width: 450px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin: 20px 0;
+}
+
+.detail-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #000000; /* ตัวหนังสือสีดำ */
+    margin-bottom: 20px;
+}
+
+.btn-back {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #6a1b9a;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.btn-back:hover {
+    background: #8e24aa;
+}
+
+/* ---------------------------------------------------- */
+/* ส่วนท้าย (Footer) */
+/* ---------------------------------------------------- */
+footer {
+    background: linear-gradient(135deg, #6a1b9a, #8e24aa);
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem; 
+} 
+
+.center-image { 
+  display: block;        
+  margin: 0 auto;        
+  max-width: 50%;        
+  height: auto;          
+  border-radius: 20px;   
+}
+.container1 {
+  max-width: 900px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 30px 40px;
+
+  display: flex;              /* ใช้ flex */
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;                  /* เว้นระยะระหว่างข้อความกับรูป */
+}
+
+/* กล่องข้อความ */
+.info {
+  flex: 2;
+}
+
+/* กล่องรูป */
+.photo {
+  flex: 1;
+  text-align: center;
+}
+
+.photo img {
+  max-width: 200px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}

@@ -1,0 +1,92 @@
+/* ================= HEADER ================= */
+header {
+  background-color: #0277bd; /* ฟ้าเข้ม */
+  color: #ffffff; /* เปลี่ยนข้อความใน header เป็นสีดำ */
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 2px 6px rgb(255, 252, 252);
+}
+
+header h1 { 
+  margin: 0;
+  font-size: 28px;
+  font-weight: bold;
+  color: #ffffff; /* หัวเรื่องใน header เป็นสีดำ */
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: #ffffff; /* ลิงก์ในเมนูนำทางเป็นสีดำ */
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #4fc3f7; /* ฟ้าอ่อน เมื่อ hover */
+  text-decoration: underline;
+}
+
+/* ================= FOOTER ================= */
+footer {
+  background-color: #0277bd;
+  color: #000; /* ตัวอักษรใน footer เป็นสีดำ */
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+/* ================= CONTENT ================= */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #e6f4f9; /* ฟ้าสว่าง */
+  margin: 0;
+  padding: 0;
+  color: #000; /* กำหนดตัวหนังสือทั้งหมดเป็นสีดำ */
+}
+
+.container1 {
+  max-width: 900px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 30px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+/* ================= INFO ================= */
+.info {
+  flex: 2;
+}
+
+.info h2 {
+  text-align: center;
+  color: #000; /* หัวข้อสีดำ */
+  margin-bottom: 20px;
+}
+
+.info p {
+  font-size: 18px;
+  margin: 8px 0;
+  color: #000; /* เนื้อหาสีดำ */
+}
+
+/* ================= PHOTO ================= */
+.photo {
+  flex: 1;
+  text-align: center;
+}
+
+.photo img {
+  max-width: 200px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
