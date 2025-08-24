@@ -6,7 +6,7 @@ const app = express(); // สร างแอป้Express
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views')); //ก าหนดโฟลเดอร์ที่เก็บ้EJS
 // ตั้งค่าให สามารถใช ไฟล์static (CSS, รูปภาพ)้ได
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'docs')));
 // ใช ้routes เพื่อจัดการเส นทาง้URL
 app.use('/', menuRoutes);
 // รัน้server
